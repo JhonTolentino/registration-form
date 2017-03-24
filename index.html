@@ -8,35 +8,36 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 <body>
 
   <section class="island">
     <div class="unit s">
-      <h1 class="pad-1 normal border-box-bottom">Want to go to Mars?</h1>
+      <h1 class="pad-t normal border-box-bottom">Want to go to Mars?</h1>
       <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <form class="" method="POST" action="index.html">
+      <form class="" method="POST" action="https://formspree.io/">
         <fieldset>
-          <legnd class="push mega italic">Personal details</legend>
-            <div class="grid">
+          <legend class="giga italic push-1-2">Personal details</legend>
+          <div class="grid">
 
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push-1-2">
+            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
               <label for="name">Name</label>
               <input id="name" name="name">
             </div>
 
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push-1-2">
+            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
               <label for="age">Age</label>
               <input id="age" name="age">
             </div>
 
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push-1-2">
+            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
               <label for="email">Email</label>
               <input id="email" type="email" name="email">
             </div>
 
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push-1-2">
+            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
               <label for="fitness">Physical fitness</label>
               <select id="fitness" name="_fitness">
                 <option>Super-human</option>
@@ -47,20 +48,23 @@
             </div>
           </div>
 
-            <div class="unit xs-1 s-1 m-1 l-1 xl-1">
-              <label for="address">Address</label>
-              <textarea id="address" name="address"></textarea>
-            </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+            <label for="address">Address</label>
+            <textarea id="address" name="address"></textarea>
+          </div>
+        </fieldset>
 
-            <h3>Mission Statement</h3>
-            <div class="push">
-              <label for="message">Why do you want to go to Mars?</label>
-              <textarea id="message" name="message"></textarea>
-            </div>
+        <fieldset>
+          <legend>Mission statement</legend>
+          <div class="push giga">
+            <label for="message">Why do you want to go to Mars?</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
 
-            <div class="unit-content-center-horizontal">
-              <button type="submit">Register for the trip!</button>
-            </div>
+          <div class="unit-content-center-horizontal">
+            <button type="submit" value="button">Register for the trip!</button>
+          </div>
+          <input type="hidden" name="_subject" value="Request to join the mission">
         </fieldset>
       </form>
     </div>
